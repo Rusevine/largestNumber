@@ -7,16 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ArrayUtility.h"
 
 int main() {
-    NSArray *numbers = @[@3,@20,@10,@6,@7];
-    NSInteger largest = 0;
+
+    NSArray *numbers1 = @[@3,@20,@10,@6,@7];
+    NSArray *numbers2 = @[@542,@545,@536,@643,@642];
+    NSArray *numbers3 = @[@34,@37,@33,@32,@34];
     
-    for (id number in numbers) {
-        if ([number integerValue] > largest){
-            largest = [number integerValue];
-        }
-    }
-    NSLog(@"%ld", largest);
+    NSInteger largest1 = [ArrayUtility largestNumber:numbers1];
+    NSInteger largest2 = [ArrayUtility largestNumber:numbers2];
+    NSInteger largest3 = [ArrayUtility largestNumber:numbers3];
+    
+    NSLog(@"%ld", largest1);
+    NSLog(@"%ld", largest2);
+    NSLog(@"%ld", largest3);
+    
     return 0;
 }
