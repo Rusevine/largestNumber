@@ -16,12 +16,12 @@ int main() {
     NSArray *numbers3 = @[@34,@37,@33,@32,@34];
     
     NSInteger largest1 = [ArrayUtility largestNumber:numbers1];
-    NSInteger largest2 = [ArrayUtility largestNumber:numbers2];
-    NSInteger largest3 = [ArrayUtility largestNumber:numbers3];
+    NSInteger smallest2 = [ArrayUtility smallestNumber:numbers2];
+    NSInteger median3 = [ArrayUtility medianNumber:numbers3];
     
     NSLog(@"%ld", largest1);
-    NSLog(@"%ld", largest2);
-    NSLog(@"%ld", largest3);
+    NSLog(@"%ld", smallest2);
+    NSLog(@"%ld", median3);
     
     return 0;
 }
